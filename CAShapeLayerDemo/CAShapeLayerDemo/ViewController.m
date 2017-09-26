@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WYDrawBoardView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    WYDrawBoardView *drawBoardView = [[WYDrawBoardView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:drawBoardView];
+    [drawBoardView drawImage:[UIImage imageNamed:@"icon_share_book"]];
 }
 
 

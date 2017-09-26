@@ -13,6 +13,10 @@
 		18BF293D1F67C88800AB3369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF293B1F67C88800AB3369 /* Main.storyboard */; };
 		18BF293F1F67C88800AB3369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BF293E1F67C88800AB3369 /* Assets.xcassets */; };
 		18BF29421F67C88800AB3369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF29401F67C88800AB3369 /* LaunchScreen.storyboard */; };
+		18BF294B1F67CBA100AB3369 /* WYDrawBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF294A1F67CBA100AB3369 /* WYDrawBoardView.m */; };
+		18BF294E1F67CC6800AB3369 /* WYBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF294D1F67CC6800AB3369 /* WYBottomView.m */; };
+		18BF29511F67D38300AB3369 /* icon_share_book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BF294F1F67D38300AB3369 /* icon_share_book@2x.png */; };
+		18BF29521F67D38300AB3369 /* icon_share_book@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BF29501F67D38300AB3369 /* icon_share_book@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		18BF293E1F67C88800AB3369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BF29411F67C88800AB3369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18BF29431F67C88800AB3369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BF29491F67CBA100AB3369 /* WYDrawBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDrawBoardView.h; sourceTree = "<group>"; };
+		18BF294A1F67CBA100AB3369 /* WYDrawBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDrawBoardView.m; sourceTree = "<group>"; };
+		18BF294C1F67CC6800AB3369 /* WYBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYBottomView.h; sourceTree = "<group>"; };
+		18BF294D1F67CC6800AB3369 /* WYBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYBottomView.m; sourceTree = "<group>"; };
+		18BF294F1F67D38300AB3369 /* icon_share_book@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_share_book@2x.png"; sourceTree = "<group>"; };
+		18BF29501F67D38300AB3369 /* icon_share_book@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_share_book@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,12 @@
 				18BF29361F67C88800AB3369 /* AppDelegate.m */,
 				18BF29381F67C88800AB3369 /* ViewController.h */,
 				18BF29391F67C88800AB3369 /* ViewController.m */,
+				18BF29491F67CBA100AB3369 /* WYDrawBoardView.h */,
+				18BF294A1F67CBA100AB3369 /* WYDrawBoardView.m */,
+				18BF294C1F67CC6800AB3369 /* WYBottomView.h */,
+				18BF294D1F67CC6800AB3369 /* WYBottomView.m */,
+				18BF294F1F67D38300AB3369 /* icon_share_book@2x.png */,
+				18BF29501F67D38300AB3369 /* icon_share_book@3x.png */,
 				18BF293B1F67C88800AB3369 /* Main.storyboard */,
 				18BF293E1F67C88800AB3369 /* Assets.xcassets */,
 				18BF29401F67C88800AB3369 /* LaunchScreen.storyboard */,
@@ -138,7 +154,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BF29511F67D38300AB3369 /* icon_share_book@2x.png in Resources */,
 				18BF29421F67C88800AB3369 /* LaunchScreen.storyboard in Resources */,
+				18BF29521F67D38300AB3369 /* icon_share_book@3x.png in Resources */,
 				18BF293F1F67C88800AB3369 /* Assets.xcassets in Resources */,
 				18BF293D1F67C88800AB3369 /* Main.storyboard in Resources */,
 			);
@@ -152,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BF293A1F67C88800AB3369 /* ViewController.m in Sources */,
+				18BF294E1F67CC6800AB3369 /* WYBottomView.m in Sources */,
+				18BF294B1F67CBA100AB3369 /* WYDrawBoardView.m in Sources */,
 				18BF29371F67C88800AB3369 /* AppDelegate.m in Sources */,
 				18BF29341F67C88800AB3369 /* main.m in Sources */,
 			);
@@ -277,9 +297,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W335NUPQPJ;
 				INFOPLIST_FILE = CAShapeLayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.konggeek.CAShapeLayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -289,9 +311,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W335NUPQPJ;
 				INFOPLIST_FILE = CAShapeLayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.konggeek.CAShapeLayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
